@@ -1,0 +1,5 @@
+poetry.lock
+dist
+.hypothesis/
+__pycache__/
+.env
