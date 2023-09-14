@@ -1,0 +1,21 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Roda um comando!
+        run: echo "Olá, Mundo!"
+
+      - name: Roda outro comando!
+        run: echo $(ls)
