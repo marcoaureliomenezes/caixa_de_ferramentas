@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Roda um comando!
-        run: echo "Olá, Mundo!"
+      - name: Copia os arquivos do repo
+        uses: actions/checkout@v4.0.0
 
       - name: Roda outro comando!
         run: echo $(ls)
